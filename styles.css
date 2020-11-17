@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+/* Global variables */
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.section1{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.full-img{
+    background: url('./tyler-nix-Y1drF0Y3Oe0-unsplash.jpg');
+    background-size: cover;
+    height: 110vh;
+    
+}
+
+.nav-menu{
+    height: 110vh;
+    background: rgb(224,197,182);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 20px 20px;
+    list-style-type: none;
+    color: white;
+    font-size: 1rem;
+    
+}
+
+.nav-link{
+    padding: 1rem 1rem;
+}
+
+.intro{
+    margin: 10rem 10rem;
+}
+
+.intro h1{
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+.intro p{
+    color: darkslategray;
+    line-height: 1.8;
+}
+
+.app-plan{
+    border-radius: .6rem;
+    color: darkslategray;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    height: 11rem;
+    background: white;
+}
+
+.app-plan h4{
+    background: lightgray;
+
+}
+
+.app-stores{
+    display: flex;
+    flex-direction: row;
+    background: white;
+    font-size: .8rem;
+}
+
+.app-stores i{
+    background: rgb(39, 39, 39);
+    color: white;
+}
+.app-store{
+    margin: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 1.2rem;
+    background: rgb(39, 39, 39);
+    width: 10rem;
+    
+}
+
+.app-plan a{
+    background: rgb(39, 39, 39);;
+}
+
+
+.google-play{
+    margin: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 1.2rem;
+    background: rgb(39, 39, 39);
+    width: 10rem;
+}
+
+/* Second Section */
+
+.section2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.scroll-workout{
+    background: rgb(246, 237, 233);
+    height: 100vh;
+}
+
+.scroll-phone{
+    height: 70vh;
+    width: 20vw;
+    margin-left: 14rem;
+    margin-top: 8rem;
+    border: 6px solid rgb(223,196,183);
+    border-radius: 1rem;
+}
+
+
+
+.workout-desc{
+    background: white ;
+    height: 100vh;
+    margin: 10rem 5rem;
+}
+
+.workout-desc h1{
+    margin-bottom: 1rem;
+    color: rgb(39, 39, 39);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+}
+
+.workout-desc p{
+    color: darkslategray;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.btn-primary{
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    color: white;
+    background: rgb(39, 39, 39);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+/* Section three */
+.section3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+ 
+.scroll-nutrition{
+    background: url(./mediteranian-salad.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.nutrition-desc{
+    background: white ;
+    height: 100vh;
+    margin: 10rem 5rem;
+}
