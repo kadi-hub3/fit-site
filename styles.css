@@ -129,12 +129,10 @@ a:hover{
     border-radius: 1rem;
 }
 
-
-
 .workout-desc{
     background: white ;
     height: 100vh;
-    margin: 10rem 5rem;
+    padding: 10rem 5rem;
 }
 
 .workout-desc h1{
@@ -143,7 +141,7 @@ a:hover{
     font-size: 2.5rem;
     display: flex;
     justify-content: flex-start;
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 .workout-desc p{
@@ -160,6 +158,7 @@ a:hover{
     background: rgb(39, 39, 39);
     text-transform: capitalize;
     font-weight: 500;
+    cursor: pointer;
 }
 
 /* Section three */
@@ -171,11 +170,48 @@ a:hover{
 .scroll-nutrition{
     background: url(./mediteranian-salad.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
+}
+
+.nutrition-screen{
+    height: 70vh;
+    width: 20vw;
+    margin-left: 1.2rem;
+    margin-top: 8rem;
+    border: 6px solid rgb(223,196,183);
+    border-radius: 1rem;
 }
 
 .nutrition-desc{
     background: white ;
-    height: 100vh;
-    margin: 10rem 5rem;
+    height: 110vh;
+    padding: 10rem 5rem;
 }
+
+.nutrition-desc h1{
+    font-size: 2.5rem;
+    color: rgb(39, 39, 39);
+    padding: 1rem;
+}
+
+.nutrition-desc p{
+    font-size: 1.2rem;
+    color: darkslategray;
+    line-height: 2;
+}
+
+.nutrition-desc ul{
+    padding-top: 1rem;
+}
+
+.nutrition-desc li{
+    padding: .5rem;
+    color: darkslategray;
+    list-style-type: none;
+}
+
+.nutrition-desc ul li:before {
+    content: '✓  ';
+    color: rgb(223,196,183);
+  }
+
