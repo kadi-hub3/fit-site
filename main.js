@@ -23,27 +23,6 @@ setInterval(function () {
 }, 3000);
 
 
-
-
-//Lopp Through Text Fade
-// let texts = document.querySelectorAll(".text-item");
-
-// let prev = null;
-// let animate = (curr, currIndex) => {
-//     let index = (currIndex + 1) % texts.length
-//     setTimeout(() => {
-//         if (prev) {
-//             prev.className = "";
-//         }
-//         curr.className = "show";
-//         prev = curr;
-//         animate(texts[index], index);
-//     }, 3000);
-// }
-
-// animate(texts[0], 0);
-
-
 //Nav Opening & Closing
 function openNav() {
     document.getElementById("mySidenav").style.width = "100vw";
