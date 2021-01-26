@@ -1,20 +1,56 @@
+//First Second slider/workout
 
-let slide1 = document.querySelector('.slide1')
+$("#slideshow1 > div:gt(0)").hide();
 
-let i = 0
-let images = ["https://www.healthypawspetinsurance.com/Images/V3/DogAndPuppyInsurance/Dog_CTA_Desktop_HeroImage.jpg", “https://hips.hearstapps.com/ghk.h-cdn.co/assets/18/12/boxer-dog.jpg", “https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSjKyvY3Wv2gyYBqDsbITfGFz5sSKNoLmuPxqIKkWDuAPuFFFH", “https://www.guidedogs.org/wp-content/uploads/2015/05/Dog-Im-Not.jpg"
-]
-const time = 2000
+setInterval(function () {
+    $('#slideshow1 > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow1');
+}, 3000);
+
+$("#slideshow2 > div:gt(0)").hide();
+
+setInterval(function () {
+    $('#slideshow2 > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow2');
+}, 3000);
 
 
-function changePic() {
-    document.slide1.src = images[i]
-    if (i < images.length - 1) {
-        i++
-    } else {
-        i = 0
-    }
 
-    setTimeout(changePic(), time)
+
+//Lopp Through Text Fade
+// let texts = document.querySelectorAll(".text-item");
+
+// let prev = null;
+// let animate = (curr, currIndex) => {
+//     let index = (currIndex + 1) % texts.length
+//     setTimeout(() => {
+//         if (prev) {
+//             prev.className = "";
+//         }
+//         curr.className = "show";
+//         prev = curr;
+//         animate(texts[index], index);
+//     }, 3000);
+// }
+
+// animate(texts[0], 0);
+
+
+//Nav Opening & Closing
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100vw";
+    document.getElementById("main").style.marginLeft = "250px";
 }
-window.onload = changePic
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}

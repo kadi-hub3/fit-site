@@ -4,184 +4,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="#">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js" type="text/javascript"></script>
 
     <title>Kadi's Blog</title>
 </head>
 
 <body>
-    <section class="section1">
-        <div class="full-img">
-            <img src="">
-        </div>
-        <div class="nav-menu">
-            <div class="">
-                <ul class="navbar">
-                    <li class="nav-link"><a href="">Shop</a></li>
-                    <li class="nav-link"><a href="">Blog</a></li>
-                    <li class="nav-link"><a href="">About</a></li>
-                    <li class="nav-link"><a href="">FAQs</a></li>
-                    <li class="nav-link"><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                </ul>
+    <header>
+        <nav>
+            <div class="logo">Kadi Moudarrif</div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <a href="#">FAQs</a>
+                <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <a href=""><button class="btn-primary">get the app</button></a>
             </div>
+
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="full-img"></div>
             <div class="intro">
-                <h1>Get Tammy Fit.</h1>
-                <p>Step by step video workouts for home and gym to get fitter and stronger. Delicious,
-                    nutritionist-crafted meal plans. Build strength and tone with Tammy, no matter what your goal is.
-                </p>
-                <div class="app-plan">
-                    <h4>PLANS START AT JUST $0.27 PER DAY</h4>
-                    <div class="app-stores">
-                        <div class="app-store"><a href=""><i class="fa fa-apple"></i> Download on the App
-                                Store</a></div>
-                        <div class="google-play"><a href=""><i class="fa fa-google-play"></i> Get it on Google Play</a>
+                <div>
+                    <h1>Get Tammy Fit.</h1>
+                    <p>Step by step video workouts for home and gym to get fitter and stronger. Delicious,
+                        nutritionist-crafted meal plans. Build strength and tone with Tammy, no matter what your
+                        goal
+                        is.
+                    </p>
+                    <div class="app-plan">
+                        <h4>PLANS START AT JUST $0.27 PER DAY</h4>
+                        <div class="app-stores">
+                            <a href="https://apple.com"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7P8DRLkvkYzG2p_Iok5ZwyWNrFgSJeoctzw&usqp=CAU">
+                            </a>
+                        </div>
+                        <div class="free-plan">
+                            Enjoy<br>7 days<br>free!
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="section2">
-        <div class="scroll-workout">
-            <div class="scroll-phone">
-                <img class='slide1' width='200' height='520'>
-            </div>
-            <div class="scroll-widgets">
-                <i class="fa fa-address-book"></i>
-                <i class="fa fa-dumbbell"></i>
-                <i class="fa fa-apple"></i>
-                <i class="fa fa-profile"></i>
-            </div>
-        </div>
-        <div class="workout-desc">
-            <div>
-                <h1>Work out</h1>
-                <p>At home. At the gym. Just your abs. Just your booty. Your upper body. Your whole body. Stretches.
-                    Cables
-                    and machines. Equipment-free. Workouts. Programs. Circuits. HIIT. Post-pregnancy.<br><br>
 
-                    We've got you covered.</p>
-            </div>
-            <button class="btn-primary">get the app</button>
+        </section>
+        <section class="section2">
+            <div class="scroll-workout">
+                <div class="scroll-phone">
+                    <video autoplay loop muted playsinline>
+                        <source
+                            src="https://player.vimeo.com/external/353227142.sd.mp4?s=57a0c5cf340e07358999b5ab9eb5286dbca06431&profile_id=165&oauth2_token_id=57447761"
+                            type="video/mp4" />
+                    </video>
+                </div>
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <!-- Diary -->
+                        <!-- <img class="tab" src="//cdn.shopify.com/s/files/1/0005/9044/6647/t/15/assets/icon-nav-diary.png?v=926299596610992744"/> -->
+                        <svg class="tab" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.1762 47H15.6342C16.5072 47 17.2002 46.775 17.7222 46.307C18.3342 45.758 18.6672 44.921 18.6672 43.904C18.6672 42.095 17.5782 40.997 15.7692 40.997H14.1762V47ZM14.9322 41.636H15.7422C17.1192 41.636 17.8932 42.464 17.8932 43.913C17.8932 44.804 17.6232 45.47 17.0832 45.902C16.6512 46.244 16.2192 46.352 15.2022 46.352H14.9322V41.636ZM21.816 40.997H21.06V47H21.816V40.997ZM27.881 45.614L28.376 47H29.222L27.017 40.997H26.117L23.858 47H24.641L25.19 45.614H27.881ZM27.647 44.966H25.415L26.549 41.951L27.647 44.966ZM32.024 44.48L34.355 47H35.318L32.987 44.507C33.536 44.471 33.806 44.408 34.094 44.255C34.652 43.958 34.958 43.418 34.958 42.743C34.958 41.654 34.184 40.997 32.906 40.997H31.268V47H32.024V44.48ZM32.024 43.967V41.645H32.906C33.734 41.645 34.184 42.05 34.184 42.797C34.184 43.553 33.689 43.967 32.78 43.967H32.024ZM39.5791 44.354L41.6221 40.997H40.7221L39.1921 43.571L37.6441 40.997H36.7531L38.8231 44.354V47H39.5791V44.354Z"
+                                fill="#333333" style="stroke: rgba(51, 51, 51, 0.3); transition: all 0.3s ease 0s;">
+                            </path>
+                            <path
+                                d="M33.061 12H36.167C36.627 12 37 12.373 37 12.833V14.5V17V19.5V22V24.5V27V29.5V31.167C37 31.627 36.627 32 36.167 32H34.5H32H29.5H27H24.5H22H19.5H17.834C17.373 32 17 31.627 17 31.167V29.5V27V24.5V22V19.5V17V14.5V12.833C17 12.373 17.373 12 17.834 12H20.94"
+                                stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgba(51, 51, 51, 0.3); transition: all 0.3s ease 0s;"></path>
+                            <path d="M25 12H29" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgba(51, 51, 51, 0.3); transition: all 0.3s ease 0s;"></path>
+                            <path d="M22 21.5005L25.6667 25L33 18" stroke="#333333" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                style="stroke: rgba(51, 51, 51, 0.3); transition: all 0.3s ease 0s;"></path>
+                            <path d="M23 10V14" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgba(51, 51, 51, 0.3); transition: all 0.3s ease 0s;"></path>
+                            <path d="M31 10V14" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgba(51, 51, 51, 0.3); transition: all 0.3s ease 0s;"></path>
+                        </svg>
 
-        </div>
-    </section>
-    <section class="section3">
-        <div class="nutrition-desc">
-            <h1>Food as fuel.</h1>
-            <p>Meal plans that don’t feel like you’re on a diet, because they’re not diets. The best nutrition is
-                sustainable, easy and delish.</p>
-            <ul>
-                <li>Standard</li>
-                <li>Vegan</li>
-                <li>Vegetarien</li>
-                <li>Gluten-free</li>
-            </ul>
-            <button class="btn-primary">get the app</button>
+                        <!-- Workouts -->
+                        <svg class="tab workouts-tab" viewBox="0 0 54 45" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="tab-text"
+                                d="M5.85357 42.614L4.56657 37.997H3.85557L2.52357 42.596L1.15557 37.997H0.35457L2.19057 44H2.85657L4.18857 39.284L5.51157 44H6.17757L8.01357 37.997H7.23057L5.85357 42.614ZM12.5896 37.889C10.8886 37.889 9.61963 39.239 9.61963 41.03C9.61963 41.786 9.83563 42.461 10.2496 42.983C10.8076 43.685 11.6806 44.108 12.5716 44.108C13.2646 44.108 13.9486 43.856 14.4886 43.388C15.1456 42.83 15.5056 41.993 15.5056 41.057C15.5056 40.157 15.2896 39.491 14.8036 38.924C14.2276 38.267 13.4266 37.889 12.5896 37.889ZM12.5716 38.591C13.1026 38.591 13.6516 38.825 14.0476 39.212C14.5156 39.662 14.7316 40.247 14.7316 41.048C14.7316 41.66 14.5066 42.308 14.1556 42.695C13.7506 43.154 13.1566 43.415 12.5536 43.415C11.3116 43.415 10.3936 42.398 10.3936 41.003C10.3936 39.617 11.3206 38.591 12.5716 38.591ZM18.6563 41.48L20.9873 44H21.9503L19.6193 41.507C20.1683 41.471 20.4383 41.408 20.7263 41.255C21.2843 40.958 21.5903 40.418 21.5903 39.743C21.5903 38.654 20.8163 37.997 19.5383 37.997H17.9003V44H18.6563V41.48ZM18.6563 40.967V38.645H19.5383C20.3663 38.645 20.8163 39.05 20.8163 39.797C20.8163 40.553 20.3213 40.967 19.4123 40.967H18.6563ZM24.8546 41.228L27.1316 44H28.0946L25.5926 40.967L28.0946 37.997H27.1856L24.8546 40.76V37.997H24.0986V44H24.8546V41.228ZM32.4764 37.889C30.7754 37.889 29.5064 39.239 29.5064 41.03C29.5064 41.786 29.7224 42.461 30.1364 42.983C30.6944 43.685 31.5674 44.108 32.4584 44.108C33.1514 44.108 33.8354 43.856 34.3754 43.388C35.0324 42.83 35.3924 41.993 35.3924 41.057C35.3924 40.157 35.1764 39.491 34.6904 38.924C34.1144 38.267 33.3134 37.889 32.4764 37.889ZM32.4584 38.591C32.9894 38.591 33.5384 38.825 33.9344 39.212C34.4024 39.662 34.6184 40.247 34.6184 41.048C34.6184 41.66 34.3934 42.308 34.0424 42.695C33.6374 43.154 33.0434 43.415 32.4404 43.415C31.1984 43.415 30.2804 42.398 30.2804 41.003C30.2804 39.617 31.2074 38.591 32.4584 38.591ZM38.435 37.997H37.679V41.552C37.679 42.488 37.796 42.929 38.165 43.352C38.57 43.838 39.209 44.108 39.911 44.108C40.595 44.108 41.198 43.856 41.603 43.397C41.99 42.965 42.134 42.452 42.134 41.552V37.997H41.36V41.552C41.36 42.353 41.279 42.659 40.955 42.974C40.694 43.244 40.271 43.415 39.893 43.415C39.515 43.415 39.083 43.253 38.831 43.01C38.543 42.722 38.435 42.335 38.435 41.57V37.997ZM46.4141 38.645H47.9351V37.997H44.1281V38.645H45.6581V44H46.4141V38.645ZM49.6203 42.389V42.515C49.6203 42.803 49.6833 43.055 49.8273 43.298C50.1423 43.838 50.6643 44.108 51.4293 44.108C52.5543 44.108 53.3193 43.406 53.3193 42.371C53.3193 41.966 53.1753 41.588 52.9143 41.309C52.6713 41.048 52.3653 40.886 51.7263 40.661C51.1143 40.445 50.9523 40.373 50.7633 40.238C50.5473 40.085 50.4213 39.833 50.4213 39.545C50.4213 38.969 50.8443 38.564 51.4383 38.564C51.8253 38.564 52.1583 38.726 52.3293 38.987C52.4283 39.158 52.4643 39.302 52.4733 39.608H53.2293C53.2023 38.564 52.5093 37.889 51.4473 37.889C50.3853 37.889 49.6563 38.582 49.6563 39.599C49.6563 40.058 49.8183 40.454 50.1243 40.733C50.3943 40.976 50.6283 41.093 51.3393 41.336C52.2843 41.651 52.5543 41.894 52.5543 42.416C52.5543 43.019 52.0773 43.433 51.4023 43.433C50.7453 43.433 50.3763 43.073 50.3403 42.389H49.6203Z"
+                                fill="#333333" style="opacity: 1; transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M30.1821 17.3634L26.3641 21.1814L23.8181 18.6364L27.6361 14.8184L30.1821 17.3634Z"
+                                fill="#333333" style="fill: rgb(51, 51, 51); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-line" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M30.1821 17.3634L26.3641 21.1814L23.8181 18.6364L27.6361 14.8184L30.1821 17.3634Z"
+                                stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgb(51, 51, 51); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M25.7979 29.3849L28.2019 26.9809C28.5929 26.5899 28.5929 25.9569 28.2019 25.5669L19.4339 16.7979C19.0439 16.4069 18.4099 16.4069 18.0199 16.7979L15.6159 19.2019C15.2249 19.5929 15.2249 20.2259 15.6159 20.6159L24.3839 29.3849C24.7749 29.7759 25.4069 29.7759 25.7979 29.3849Z"
+                                fill="#333333" style="fill: rgb(51, 51, 51); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-line" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M25.7979 29.3849L28.2019 26.9809C28.5929 26.5899 28.5929 25.9569 28.2019 25.5669L19.4339 16.7979C19.0439 16.4069 18.4099 16.4069 18.0199 16.7979L15.6159 19.2019C15.2249 19.5929 15.2249 20.2259 15.6159 20.6159L24.3839 29.3849C24.7749 29.7759 25.4069 29.7759 25.7979 29.3849Z"
+                                stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgb(51, 51, 51); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M35.9805 19.2021L38.3845 16.7981C38.7745 16.4071 38.7745 15.7741 38.3845 15.3841L29.6165 6.61515C29.2255 6.22415 28.5925 6.22415 28.2025 6.61515L25.7975 9.01915C25.4075 9.41015 25.4075 10.0431 25.7975 10.4331L34.5655 19.2021C34.9565 19.5931 35.5895 19.5931 35.9805 19.2021Z"
+                                fill="#333333" style="fill: rgb(51, 51, 51); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-line" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M35.9805 19.2021L38.3845 16.7981C38.7745 16.4071 38.7745 15.7741 38.3845 15.3841L29.6165 6.61515C29.2255 6.22415 28.5925 6.22415 28.2025 6.61515L25.7975 9.01915C25.4075 9.41015 25.4075 10.0431 25.7975 10.4331L34.5655 19.2021C34.9565 19.5931 35.5895 19.5931 35.9805 19.2021Z"
+                                stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgb(51, 51, 51); transition: all 0.3s ease 0s;"></path>
+                        </svg>
 
-        </div>
-        <div class="scroll-nutrition">
-            <div class="">
-                <img src="">
-                <div class="nutrition-screen"></div>
-            </div>
+                        <!-- Nutrition -->
+                        <svg class="tab nutrition-tab" viewBox="0 0 51 45" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="tab-text"
+                                d="M0.970774 39.41L4.20177 44H4.86777V37.997H4.11177V42.515L0.907774 37.997H0.214773V44H0.970774V39.41ZM8.25633 37.997H7.50033V41.552C7.50033 42.488 7.61733 42.929 7.98633 43.352C8.39133 43.838 9.03033 44.108 9.73233 44.108C10.4163 44.108 11.0193 43.856 11.4243 43.397C11.8113 42.965 11.9553 42.452 11.9553 41.552V37.997H11.1813V41.552C11.1813 42.353 11.1003 42.659 10.7763 42.974C10.5153 43.244 10.0923 43.415 9.71433 43.415C9.33633 43.415 8.90433 43.253 8.65233 43.01C8.36433 42.722 8.25633 42.335 8.25633 41.57V37.997ZM16.2354 38.645H17.7564V37.997H13.9494V38.645H15.4794V44H16.2354V38.645ZM20.5762 41.48L22.9072 44H23.8702L21.5392 41.507C22.0882 41.471 22.3582 41.408 22.6462 41.255C23.2042 40.958 23.5102 40.418 23.5102 39.743C23.5102 38.654 22.7362 37.997 21.4582 37.997H19.8202V44H20.5762V41.48ZM20.5762 40.967V38.645H21.4582C22.2862 38.645 22.7362 39.05 22.7362 39.797C22.7362 40.553 22.2412 40.967 21.3322 40.967H20.5762ZM26.7745 37.997H26.0185V44H26.7745V37.997ZM31.1211 38.645H32.6421V37.997H28.8351V38.645H30.3651V44H31.1211V38.645ZM35.462 37.997H34.706V44H35.462V37.997ZM40.825 37.889C39.124 37.889 37.855 39.239 37.855 41.03C37.855 41.786 38.071 42.461 38.485 42.983C39.043 43.685 39.916 44.108 40.807 44.108C41.5 44.108 42.184 43.856 42.724 43.388C43.381 42.83 43.741 41.993 43.741 41.057C43.741 40.157 43.525 39.491 43.039 38.924C42.463 38.267 41.662 37.889 40.825 37.889ZM40.807 38.591C41.338 38.591 41.887 38.825 42.283 39.212C42.751 39.662 42.967 40.247 42.967 41.048C42.967 41.66 42.742 42.308 42.391 42.695C41.986 43.154 41.392 43.415 40.789 43.415C39.547 43.415 38.629 42.398 38.629 41.003C38.629 39.617 39.556 38.591 40.807 38.591ZM46.8917 39.41L50.1227 44H50.7887V37.997H50.0327V42.515L46.8287 37.997H46.1357V44H46.8917V39.41Z"
+                                fill="#333333" style="opacity: 0.3; transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M28.4907 13.0507C27.3377 12.8767 26.0227 13.1567 24.8887 13.7427C24.3257 14.0327 23.6727 14.0327 23.1117 13.7427C21.9777 13.1567 20.6627 12.8767 19.5097 13.0507C16.1107 13.5657 14.3327 17.5827 15.2317 21.9557C16.1297 26.3297 18.8117 29.0767 21.3057 28.9977C21.8067 28.9837 23.1017 28.1137 23.9997 28.1137C24.8977 28.1137 26.1927 28.9837 26.6947 28.9977C29.1887 29.0767 31.8697 26.3297 32.7687 21.9557C33.6667 17.5827 31.8887 13.5657 28.4907 13.0507Z"
+                                fill="#333333" style="fill: rgba(51, 51, 51, 0); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-line" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M28.4907 13.0507C27.3377 12.8767 26.0227 13.1567 24.8887 13.7427C24.3257 14.0327 23.6727 14.0327 23.1117 13.7427C21.9777 13.1567 20.6627 12.8767 19.5097 13.0507C16.1107 13.5657 14.3327 17.5827 15.2317 21.9557C16.1297 26.3297 18.8117 29.0767 21.3057 28.9977C21.8067 28.9837 23.1017 28.1137 23.9997 28.1137C24.8977 28.1137 26.1927 28.9837 26.6947 28.9977C29.1887 29.0767 31.8697 26.3297 32.7687 21.9557C33.6667 17.5827 31.8887 13.5657 28.4907 13.0507Z"
+                                stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgba(51, 51, 51, 0.3); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24 12C24 12 24 6 30 6C30 6 30 10 26 10H25" fill="#333333"
+                                style="fill: rgba(51, 51, 51, 0); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-line" d="M24 12C24 12 24 6 30 6C30 6 30 10 26 10H25" stroke="#333333"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgba(51, 51, 51, 0.3); transition: all 0.3s ease 0s;"></path>
+                        </svg>
 
-        </div>
+                        <!-- Profile -->
+                        <!-- <img class="tab" src="//cdn.shopify.com/s/files/1/0005/9044/6647/t/15/assets/icon-nav-profile.png?v=16677059584346005556"/> -->
 
-    </section>
-    <section class="section4">
-        <div class="fadein-img">
-            <img class="img1" height="300" width="300">
-            <img class="img2" height="300" width="300">
-        </div>
-        <div class="proverb">
-            <h1>Bounce back.</h1>
-            <p>“I don’t want women to give up after having a baby, thinking that their body will never be the same. The
-                truth is that it probably won’t ever be the same. It can be even better.”</p>
-            <button class="btn-primary">Get the app</button>
-        </div>
-    </section>
-    <section class="section5">
-        <div class="subscription">
-            <h1>Subscribe to the app & save</h1>
-            <div class="app-stores">
-                <div class="app-store"><a href=""><i class="fa fa-apple"></i> Download on the App
-                        Store</a></div>
-                <div class="google-play"><a href=""><i class="fa fa-google-play"></i> Get it on Google Play</a>
+                        <svg class="tab" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.88093 44.705H10.8079C11.4739 44.705 11.9419 44.57 12.2929 44.291C12.6979 43.958 12.9319 43.427 12.9319 42.833C12.9319 41.645 12.1489 40.997 10.7269 40.997H9.12493V47H9.88093V44.705ZM9.88093 44.057V41.645H10.5649C10.9249 41.645 11.1679 41.681 11.4019 41.762C11.8789 41.924 12.1669 42.338 12.1669 42.851C12.1669 43.364 11.8699 43.787 11.4109 43.949C11.2039 44.03 10.9879 44.057 10.6639 44.057H9.88093ZM15.8507 44.48L18.1817 47H19.1447L16.8137 44.507C17.3627 44.471 17.6327 44.408 17.9207 44.255C18.4787 43.958 18.7847 43.418 18.7847 42.743C18.7847 41.654 18.0107 40.997 16.7327 40.997H15.0947V47H15.8507V44.48ZM15.8507 43.967V41.645H16.7327C17.5607 41.645 18.0107 42.05 18.0107 42.797C18.0107 43.553 17.5157 43.967 16.6067 43.967H15.8507ZM23.8592 40.889C22.1582 40.889 20.8892 42.239 20.8892 44.03C20.8892 44.786 21.1052 45.461 21.5192 45.983C22.0772 46.685 22.9502 47.108 23.8412 47.108C24.5342 47.108 25.2182 46.856 25.7582 46.388C26.4152 45.83 26.7752 44.993 26.7752 44.057C26.7752 43.157 26.5592 42.491 26.0732 41.924C25.4972 41.267 24.6962 40.889 23.8592 40.889ZM23.8412 41.591C24.3722 41.591 24.9212 41.825 25.3172 42.212C25.7852 42.662 26.0012 43.247 26.0012 44.048C26.0012 44.66 25.7762 45.308 25.4252 45.695C25.0202 46.154 24.4262 46.415 23.8232 46.415C22.5812 46.415 21.6632 45.398 21.6632 44.003C21.6632 42.617 22.5902 41.591 23.8412 41.591ZM29.9259 41.645H32.2659V40.997H29.1699V47H29.9259V44.3H32.2659V43.652H29.9259V41.645ZM35.2803 40.997H34.5243V47H35.2803V40.997ZM38.7803 46.316V40.997H38.0243V47H40.8953V46.316H38.7803ZM43.7992 41.645H46.1662V40.997H43.0432V47H46.1662V46.352H43.7992V44.3H46.1662V43.652H43.7992V41.645Z"
+                                fill="#333333"></path>
+                            <path d="M36 32C36 27.029 31.971 23 27 23C22.029 23 18 27.029 18 32" stroke="#333333"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgba(51, 51, 51, 0.3); transition: all 0.3s ease 0s;"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M32 15C32 17.762 29.761 20 27 20C24.239 20 22 17.762 22 15C22 12.238 24.239 10 27 10C29.761 10 32 12.238 32 15Z"
+                                stroke="#333333" style="stroke: rgba(51, 51, 51, 0.3); transition: all 0.3s ease 0s;">
+                            </path>
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="subscription-plans">
-            <div class="month">
-                <div class="month1">19€<br>
-                    <span style='font-size: 0.9rem;font-weight: 300;'>/month</span></div>
-                <div class="day">0.46€<span style='font-size: 0.9rem;font-weight: 300;'>per day</span></div>
-            </div>
-            <div class="quarter">
-                <div class="month1">49€<span style='font-size: 0.9rem;font-weight: 300;'>/quarter</span></div>
-                <div class="day">0.55€<span style='font-size: 0.9rem;font-weight: 300;'>per day</span></div>
-            </div>
-            <div class="year">
-                <div class="month1">99€<span style='font-size: 0.9rem;font-weight: 300;'>/year</span></div>
-                <div class="day">0.27€<span style='font-size: 0.9rem;font-weight: 300;'>per day</span></div>
-            </div>
-        </div>
-    </section>
-    <section class="section6">
+            <div class="workout-desc">
+                <div>
+                    <h1>
+                        Work out,
+                        <!-- <br/> -->
+                        <div class="text-fade">
+                            <div class="text-item">
+                                <span>h</span><span>o</span><span>w</span><span>e</span><span>v</span><span>e</span><span>r</span><span>,</span><br><span>
+                                </span><span>w</span><span>h</span><span>e</span><span>r</span><span>e</span><span>v</span><span>e</span><span>r</span><span>.</span>
+                            </div>
+                            <div class="text-item"><span>y</span><span>o</span><span>u</span><span>r</span><span>
+                                </span><span>b</span><span>o</span><span>o</span><span>t</span><span>y</span><span>,</span><br><span>
+                                </span><span>a</span><span>t</span><span>
+                                </span><span>h</span><span>o</span><span>m</span><span>e</span><span>.</span></div>
+                            <div class="text-item"><span>y</span><span>o</span><span>u</span><span>r</span><span>
+                                </span><span>l</span><span>e</span><span>g</span><span>s</span><span>,</span><br><span>
+                                </span><span>a</span><span>t</span><span></span>
+                                </span><span>t</span><span>h</span><span>e</span><span>
+                                </span><span>g</span><span>y</span><span>m</span><span>.</span></div>
+                        </div>
+                    </h1>
 
-        <div class="browse-title">
-            <h1>Shop my programs, favourite products and supplements</h1>
-            <button class="btn-primary">Browse shop</button>
-        </div>
-        <div class="browse-items1">
-            <div class="browse-div1"><a href="">
-                    <h4>Workout essentials</h4>
-                </a></div>
-            <div class="browse-div2">
-                <h4>8 week booty</h4>
-            </div>
-        </div>
-        <div class="browse-items2">
-            <div class="browse-div3"><a href=""><img class="browse-div3-img">
-                    <h4>Fit pro whey protein</h4>
-                </a></div>
-            <div class="browse-div4"><a href=""><img class="browse-div4-img">
-                    <h4>Pregnancy program</h4>
-                </a></div>
-            <div class="browse-div5"><a href=""><img class="browse-div5-img">
-                    <h4>Zip front crop</h4>
-                </a></div>
-        </div>
+                    <p>At home. At the gym. Just your abs. Just your booty. Your upper body. Your whole body. Stretches.
+                        Cables
+                        and machines. Equipment-free. Workouts. Programs. Circuits. HIIT. Post-pregnancy.<br><br>
 
-    </section>
-    <section class="newsletter">
-        <div class="news-form">
-            <form>
-                <div class="input-container">
-                    <i class="fa fa-user icon"></i>
-                    <input class="input-field" type="text" placeholder="Name" name="usrnm">
+                        We've got you covered.</p>
+                    <button class="btn-primary">get the app</button>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="nutrition-desc">
+                <div>
+                    <h1>Food as fuel.</h1>
+                    <p>Meal plans that don’t feel like you’re on a diet, because they’re not diets. The best nutrition
+                        is
+                        sustainable, easy and delish.</p>
+                    <ul>
+                        <li><span>&#10003;</span> Standard</li>
+                        <li><span>&#10003;</span> Vegan</li>
+                        <li><span>&#10003;</span> Vegetarien</li>
+                        <li><span>&#10003;</span> Gluten-free</li>
+                    </ul>
+                    <button class="btn-primary">get the app</button>
+                </div>
+            </div>
+            <div class="scroll-nutrition">
+                <!-- <img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2FsYWR8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60"> -->
+                <div id="slideshow1">
+                    <div>
+                        <img
+                            src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fG51dHJpdGlvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+                    </div>
+                    <div>
+                        <img
+                            src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2FsbW9ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60">
+                    </div>
+                    <div>
+                        <img
+                            src="https://images.unsplash.com/photo-1502472231352-10142bacaba2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8dG9mdSUyMHZlZ2dpZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60">
+                    </div>
+                </div>
+                <div class="nutrition-screen">
+                    <div id="slideshow2">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGZvb2R8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60"
+                                height="330rem" width="160rem">
+                            <h4>Rasberry Cheese Cake</h4>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fG51dHJpdGlvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                                height="330rem" width="160rem">
+                            <h4>Avocado Toast with Egg</h4>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2FsbW9ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
+                                height="330rem" width="160rem">
+                            <h4>Salmon with Cucumber Noodles</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <!-- Diary -->
+                        <!-- <img class="tab" src="//cdn.shopify.com/s/files/1/0005/9044/6647/t/15/assets/icon-nav-diary.png?v=926299596610992744"/> -->
+                        <svg class="tab" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.1762 47H15.6342C16.5072 47 17.2002 46.775 17.7222 46.307C18.3342 45.758 18.6672 44.921 18.6672 43.904C18.6672 42.095 17.5782 40.997 15.7692 40.997H14.1762V47ZM14.9322 41.636H15.7422C17.1192 41.636 17.8932 42.464 17.8932 43.913C17.8932 44.804 17.6232 45.47 17.0832 45.902C16.6512 46.244 16.2192 46.352 15.2022 46.352H14.9322V41.636ZM21.816 40.997H21.06V47H21.816V40.997ZM27.881 45.614L28.376 47H29.222L27.017 40.997H26.117L23.858 47H24.641L25.19 45.614H27.881ZM27.647 44.966H25.415L26.549 41.951L27.647 44.966ZM32.024 44.48L34.355 47H35.318L32.987 44.507C33.536 44.471 33.806 44.408 34.094 44.255C34.652 43.958 34.958 43.418 34.958 42.743C34.958 41.654 34.184 40.997 32.906 40.997H31.268V47H32.024V44.48ZM32.024 43.967V41.645H32.906C33.734 41.645 34.184 42.05 34.184 42.797C34.184 43.553 33.689 43.967 32.78 43.967H32.024ZM39.5791 44.354L41.6221 40.997H40.7221L39.1921 43.571L37.6441 40.997H36.7531L38.8231 44.354V47H39.5791V44.354Z"
+                                fill="rgb(255, 249, 249)"></path>
+                            <path
+                                d="M33.061 12H36.167C36.627 12 37 12.373 37 12.833V14.5V17V19.5V22V24.5V27V29.5V31.167C37 31.627 36.627 32 36.167 32H34.5H32H29.5H27H24.5H22H19.5H17.834C17.373 32 17 31.627 17 31.167V29.5V27V24.5V22V19.5V17V14.5V12.833C17 12.373 17.373 12 17.834 12H20.94"
+                                stroke="rgb(255, 249, 249)" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M25 12H29" stroke="rgb(255, 249, 249)" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M22 21.5005L25.6667 25L33 18" stroke="rgb(255, 249, 249)" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M23 10V14" stroke="rgb(255, 249, 249)" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M31 10V14" stroke="rgb(255, 249, 249)" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+
+                        <!-- Workouts -->
+                        <svg class="tab workouts-tab" viewBox="0 0 54 45" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="tab-text"
+                                d="M5.85357 42.614L4.56657 37.997H3.85557L2.52357 42.596L1.15557 37.997H0.35457L2.19057 44H2.85657L4.18857 39.284L5.51157 44H6.17757L8.01357 37.997H7.23057L5.85357 42.614ZM12.5896 37.889C10.8886 37.889 9.61963 39.239 9.61963 41.03C9.61963 41.786 9.83563 42.461 10.2496 42.983C10.8076 43.685 11.6806 44.108 12.5716 44.108C13.2646 44.108 13.9486 43.856 14.4886 43.388C15.1456 42.83 15.5056 41.993 15.5056 41.057C15.5056 40.157 15.2896 39.491 14.8036 38.924C14.2276 38.267 13.4266 37.889 12.5896 37.889ZM12.5716 38.591C13.1026 38.591 13.6516 38.825 14.0476 39.212C14.5156 39.662 14.7316 40.247 14.7316 41.048C14.7316 41.66 14.5066 42.308 14.1556 42.695C13.7506 43.154 13.1566 43.415 12.5536 43.415C11.3116 43.415 10.3936 42.398 10.3936 41.003C10.3936 39.617 11.3206 38.591 12.5716 38.591ZM18.6563 41.48L20.9873 44H21.9503L19.6193 41.507C20.1683 41.471 20.4383 41.408 20.7263 41.255C21.2843 40.958 21.5903 40.418 21.5903 39.743C21.5903 38.654 20.8163 37.997 19.5383 37.997H17.9003V44H18.6563V41.48ZM18.6563 40.967V38.645H19.5383C20.3663 38.645 20.8163 39.05 20.8163 39.797C20.8163 40.553 20.3213 40.967 19.4123 40.967H18.6563ZM24.8546 41.228L27.1316 44H28.0946L25.5926 40.967L28.0946 37.997H27.1856L24.8546 40.76V37.997H24.0986V44H24.8546V41.228ZM32.4764 37.889C30.7754 37.889 29.5064 39.239 29.5064 41.03C29.5064 41.786 29.7224 42.461 30.1364 42.983C30.6944 43.685 31.5674 44.108 32.4584 44.108C33.1514 44.108 33.8354 43.856 34.3754 43.388C35.0324 42.83 35.3924 41.993 35.3924 41.057C35.3924 40.157 35.1764 39.491 34.6904 38.924C34.1144 38.267 33.3134 37.889 32.4764 37.889ZM32.4584 38.591C32.9894 38.591 33.5384 38.825 33.9344 39.212C34.4024 39.662 34.6184 40.247 34.6184 41.048C34.6184 41.66 34.3934 42.308 34.0424 42.695C33.6374 43.154 33.0434 43.415 32.4404 43.415C31.1984 43.415 30.2804 42.398 30.2804 41.003C30.2804 39.617 31.2074 38.591 32.4584 38.591ZM38.435 37.997H37.679V41.552C37.679 42.488 37.796 42.929 38.165 43.352C38.57 43.838 39.209 44.108 39.911 44.108C40.595 44.108 41.198 43.856 41.603 43.397C41.99 42.965 42.134 42.452 42.134 41.552V37.997H41.36V41.552C41.36 42.353 41.279 42.659 40.955 42.974C40.694 43.244 40.271 43.415 39.893 43.415C39.515 43.415 39.083 43.253 38.831 43.01C38.543 42.722 38.435 42.335 38.435 41.57V37.997ZM46.4141 38.645H47.9351V37.997H44.1281V38.645H45.6581V44H46.4141V38.645ZM49.6203 42.389V42.515C49.6203 42.803 49.6833 43.055 49.8273 43.298C50.1423 43.838 50.6643 44.108 51.4293 44.108C52.5543 44.108 53.3193 43.406 53.3193 42.371C53.3193 41.966 53.1753 41.588 52.9143 41.309C52.6713 41.048 52.3653 40.886 51.7263 40.661C51.1143 40.445 50.9523 40.373 50.7633 40.238C50.5473 40.085 50.4213 39.833 50.4213 39.545C50.4213 38.969 50.8443 38.564 51.4383 38.564C51.8253 38.564 52.1583 38.726 52.3293 38.987C52.4283 39.158 52.4643 39.302 52.4733 39.608H53.2293C53.2023 38.564 52.5093 37.889 51.4473 37.889C50.3853 37.889 49.6563 38.582 49.6563 39.599C49.6563 40.058 49.8183 40.454 50.1243 40.733C50.3943 40.976 50.6283 41.093 51.3393 41.336C52.2843 41.651 52.5543 41.894 52.5543 42.416C52.5543 43.019 52.0773 43.433 51.4023 43.433C50.7453 43.433 50.3763 43.073 50.3403 42.389H49.6203Z"
+                                fill="rgb(255, 249, 249)" style="opacity: 1; transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M30.1821 17.3634L26.3641 21.1814L23.8181 18.6364L27.6361 14.8184L30.1821 17.3634Z"
+                                fill="#333333" style="fill: transparent; transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-line" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M30.1821 17.3634L26.3641 21.1814L23.8181 18.6364L27.6361 14.8184L30.1821 17.3634Z"
+                                stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgb(255, 249, 249); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M25.7979 29.3849L28.2019 26.9809C28.5929 26.5899 28.5929 25.9569 28.2019 25.5669L19.4339 16.7979C19.0439 16.4069 18.4099 16.4069 18.0199 16.7979L15.6159 19.2019C15.2249 19.5929 15.2249 20.2259 15.6159 20.6159L24.3839 29.3849C24.7749 29.7759 25.4069 29.7759 25.7979 29.3849Z"
+                                fill="#333333" style="fill: transparent; transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-line" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M25.7979 29.3849L28.2019 26.9809C28.5929 26.5899 28.5929 25.9569 28.2019 25.5669L19.4339 16.7979C19.0439 16.4069 18.4099 16.4069 18.0199 16.7979L15.6159 19.2019C15.2249 19.5929 15.2249 20.2259 15.6159 20.6159L24.3839 29.3849C24.7749 29.7759 25.4069 29.7759 25.7979 29.3849Z"
+                                stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgb(255, 249, 249); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M35.9805 19.2021L38.3845 16.7981C38.7745 16.4071 38.7745 15.7741 38.3845 15.3841L29.6165 6.61515C29.2255 6.22415 28.5925 6.22415 28.2025 6.61515L25.7975 9.01915C25.4075 9.41015 25.4075 10.0431 25.7975 10.4331L34.5655 19.2021C34.9565 19.5931 35.5895 19.5931 35.9805 19.2021Z"
+                                fill="#333333" style="fill: transparent; transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-line" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M35.9805 19.2021L38.3845 16.7981C38.7745 16.4071 38.7745 15.7741 38.3845 15.3841L29.6165 6.61515C29.2255 6.22415 28.5925 6.22415 28.2025 6.61515L25.7975 9.01915C25.4075 9.41015 25.4075 10.0431 25.7975 10.4331L34.5655 19.2021C34.9565 19.5931 35.5895 19.5931 35.9805 19.2021Z"
+                                stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgb(255, 249, 249); transition: all 0.3s ease 0s;"></path>
+                        </svg>
+
+                        <!-- Nutrition -->
+                        <svg class="tab nutrition-tab" viewBox="0 0 51 45" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="tab-text"
+                                d="M0.970774 39.41L4.20177 44H4.86777V37.997H4.11177V42.515L0.907774 37.997H0.214773V44H0.970774V39.41ZM8.25633 37.997H7.50033V41.552C7.50033 42.488 7.61733 42.929 7.98633 43.352C8.39133 43.838 9.03033 44.108 9.73233 44.108C10.4163 44.108 11.0193 43.856 11.4243 43.397C11.8113 42.965 11.9553 42.452 11.9553 41.552V37.997H11.1813V41.552C11.1813 42.353 11.1003 42.659 10.7763 42.974C10.5153 43.244 10.0923 43.415 9.71433 43.415C9.33633 43.415 8.90433 43.253 8.65233 43.01C8.36433 42.722 8.25633 42.335 8.25633 41.57V37.997ZM16.2354 38.645H17.7564V37.997H13.9494V38.645H15.4794V44H16.2354V38.645ZM20.5762 41.48L22.9072 44H23.8702L21.5392 41.507C22.0882 41.471 22.3582 41.408 22.6462 41.255C23.2042 40.958 23.5102 40.418 23.5102 39.743C23.5102 38.654 22.7362 37.997 21.4582 37.997H19.8202V44H20.5762V41.48ZM20.5762 40.967V38.645H21.4582C22.2862 38.645 22.7362 39.05 22.7362 39.797C22.7362 40.553 22.2412 40.967 21.3322 40.967H20.5762ZM26.7745 37.997H26.0185V44H26.7745V37.997ZM31.1211 38.645H32.6421V37.997H28.8351V38.645H30.3651V44H31.1211V38.645ZM35.462 37.997H34.706V44H35.462V37.997ZM40.825 37.889C39.124 37.889 37.855 39.239 37.855 41.03C37.855 41.786 38.071 42.461 38.485 42.983C39.043 43.685 39.916 44.108 40.807 44.108C41.5 44.108 42.184 43.856 42.724 43.388C43.381 42.83 43.741 41.993 43.741 41.057C43.741 40.157 43.525 39.491 43.039 38.924C42.463 38.267 41.662 37.889 40.825 37.889ZM40.807 38.591C41.338 38.591 41.887 38.825 42.283 39.212C42.751 39.662 42.967 40.247 42.967 41.048C42.967 41.66 42.742 42.308 42.391 42.695C41.986 43.154 41.392 43.415 40.789 43.415C39.547 43.415 38.629 42.398 38.629 41.003C38.629 39.617 39.556 38.591 40.807 38.591ZM46.8917 39.41L50.1227 44H50.7887V37.997H50.0327V42.515L46.8287 37.997H46.1357V44H46.8917V39.41Z"
+                                fill="rgb(255, 249, 249)" style="opacity: 1; transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M28.4907 13.0507C27.3377 12.8767 26.0227 13.1567 24.8887 13.7427C24.3257 14.0327 23.6727 14.0327 23.1117 13.7427C21.9777 13.1567 20.6627 12.8767 19.5097 13.0507C16.1107 13.5657 14.3327 17.5827 15.2317 21.9557C16.1297 26.3297 18.8117 29.0767 21.3057 28.9977C21.8067 28.9837 23.1017 28.1137 23.9997 28.1137C24.8977 28.1137 26.1927 28.9837 26.6947 28.9977C29.1887 29.0767 31.8697 26.3297 32.7687 21.9557C33.6667 17.5827 31.8887 13.5657 28.4907 13.0507Z"
+                                fill="#333333" style="fill: rgb(255, 249, 249); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-line" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M28.4907 13.0507C27.3377 12.8767 26.0227 13.1567 24.8887 13.7427C24.3257 14.0327 23.6727 14.0327 23.1117 13.7427C21.9777 13.1567 20.6627 12.8767 19.5097 13.0507C16.1107 13.5657 14.3327 17.5827 15.2317 21.9557C16.1297 26.3297 18.8117 29.0767 21.3057 28.9977C21.8067 28.9837 23.1017 28.1137 23.9997 28.1137C24.8977 28.1137 26.1927 28.9837 26.6947 28.9977C29.1887 29.0767 31.8697 26.3297 32.7687 21.9557C33.6667 17.5827 31.8887 13.5657 28.4907 13.0507Z"
+                                stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgb(255, 249, 249); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24 12C24 12 24 6 30 6C30 6 30 10 26 10H25" fill="#333333"
+                                style="fill: rgb(255, 249, 249); transition: all 0.3s ease 0s;"></path>
+                            <path class="tab-line" d="M24 12C24 12 24 6 30 6C30 6 30 10 26 10H25" stroke="#333333"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                style="stroke: rgb(255, 249, 249); transition: all 0.3s ease 0s;"></path>
+                        </svg>
+
+                        <!-- Profile -->
+                        <!-- <img class="tab" src="//cdn.shopify.com/s/files/1/0005/9044/6647/t/15/assets/icon-nav-profile.png?v=16677059584346005556"/> -->
+
+                        <svg class="tab" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.88093 44.705H10.8079C11.4739 44.705 11.9419 44.57 12.2929 44.291C12.6979 43.958 12.9319 43.427 12.9319 42.833C12.9319 41.645 12.1489 40.997 10.7269 40.997H9.12493V47H9.88093V44.705ZM9.88093 44.057V41.645H10.5649C10.9249 41.645 11.1679 41.681 11.4019 41.762C11.8789 41.924 12.1669 42.338 12.1669 42.851C12.1669 43.364 11.8699 43.787 11.4109 43.949C11.2039 44.03 10.9879 44.057 10.6639 44.057H9.88093ZM15.8507 44.48L18.1817 47H19.1447L16.8137 44.507C17.3627 44.471 17.6327 44.408 17.9207 44.255C18.4787 43.958 18.7847 43.418 18.7847 42.743C18.7847 41.654 18.0107 40.997 16.7327 40.997H15.0947V47H15.8507V44.48ZM15.8507 43.967V41.645H16.7327C17.5607 41.645 18.0107 42.05 18.0107 42.797C18.0107 43.553 17.5157 43.967 16.6067 43.967H15.8507ZM23.8592 40.889C22.1582 40.889 20.8892 42.239 20.8892 44.03C20.8892 44.786 21.1052 45.461 21.5192 45.983C22.0772 46.685 22.9502 47.108 23.8412 47.108C24.5342 47.108 25.2182 46.856 25.7582 46.388C26.4152 45.83 26.7752 44.993 26.7752 44.057C26.7752 43.157 26.5592 42.491 26.0732 41.924C25.4972 41.267 24.6962 40.889 23.8592 40.889ZM23.8412 41.591C24.3722 41.591 24.9212 41.825 25.3172 42.212C25.7852 42.662 26.0012 43.247 26.0012 44.048C26.0012 44.66 25.7762 45.308 25.4252 45.695C25.0202 46.154 24.4262 46.415 23.8232 46.415C22.5812 46.415 21.6632 45.398 21.6632 44.003C21.6632 42.617 22.5902 41.591 23.8412 41.591ZM29.9259 41.645H32.2659V40.997H29.1699V47H29.9259V44.3H32.2659V43.652H29.9259V41.645ZM35.2803 40.997H34.5243V47H35.2803V40.997ZM38.7803 46.316V40.997H38.0243V47H40.8953V46.316H38.7803ZM43.7992 41.645H46.1662V40.997H43.0432V47H46.1662V46.352H43.7992V44.3H46.1662V43.652H43.7992V41.645Z"
+                                fill="rgb(255, 249, 249)"></path>
+                            <path d="M36 32C36 27.029 31.971 23 27 23C22.029 23 18 27.029 18 32"
+                                stroke="rgb(255, 249, 249)" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M32 15C32 17.762 29.761 20 27 20C24.239 20 22 17.762 22 15C22 12.238 24.239 10 27 10C29.761 10 32 12.238 32 15Z"
+                                stroke="rgb(255, 249, 249)"></path>
+                        </svg>
+                    </div>
                 </div>
 
-                <div class="input-container">
-                    <i class="fa fa-envelope icon"></i>
-                    <input class="input-field" type="text" placeholder="Email address" name="email">
-                </div>
-                <button class="btn-primary signup">Sign up</button>
-            </form>
+            </div>
 
-        </div>
-        <div class="newsletter-desc">
-            <h2>Sign up to hear about my latest workouts, recipes & more!</h2>
-        </div>
-    </section>
+        </section>
+        <section class="section4">
+            <div class="fadein-img">
+                <img class="img1" height="250" width="250">
+                <img class="img2" height="250" width="250">
+            </div>
+            <div class="proverb">
+                <div>
+                    <h1>Bounce back.</h1>
+                    <p>“I don’t want women to give up after having a baby, thinking that their body will never be the
+                        same.
+                        The
+                        truth is that it probably won’t ever be the same. It can be even better.”</p>
+                    <button class="btn-primary">Get the app</button>
+                </div>
+            </div>
+        </section>
+        <section class="section5">
+            <div class="subscription">
+                <div>
+                    <h1>Subscribe to the app & save</h1><br><br>
+                    <div class="app-stores">
+                        <a href="https://apple.com"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7P8DRLkvkYzG2p_Iok5ZwyWNrFgSJeoctzw&usqp=CAU">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="subscription-plans">
+
+                <div class="month">
+                    <div class="month1">19€<br>
+                        <span style='font-size: 0.9;font-weight: 300;'>/month</span></div>
+                    <div class="day">0.46€<span style='font-size: 0.9rem;font-weight: 300;'>per day</span></div>
+
+                </div>
+                <div class="quarter">
+                    <div class="month1">49€<span style='font-size: 0.9rem;font-weight: 300;'>/quarter</span></div>
+                    <div class="day">0.55€<span style='font-size: 0.9rem;font-weight: 300;'>per day</span></div>
+                    <div class="free-plan">Save<br>16%</div>
+                </div>
+
+                <div class="year">
+                    <div class="month1">99€<span style='font-size: 0.9rem;font-weight: 300;'>/year</span></div>
+                    <div class="day">0.27€<span style='font-size: 0.9rem;font-weight: 300;'>per day</span></div>
+                    <div class="free-plan">Save<br>58%</div>
+                    <h4>Most Popular</h4>
+                </div>
+            </div>
+
+        </section>
+        <section class="section6">
+
+            <div class="browse-title">
+                <h1>Shop my programs, favourite products and supplements</h1>
+                <button class="btn-primary ">Browse shop</button>
+            </div>
+            <div class="browse-items">
+                <a href="">
+                    <div class="browse-div1">
+                        <h4>Workout essentials</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="browse-div2">
+                        <h4>8 week booty</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="browse-div3">
+                        <h4>Fit pro whey protein</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="browse-div4">
+                        <h4>Pregnancy program</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="browse-div5">
+                        <h4>Zip front crop</h4>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+        <section class="newsletter">
+            <div class="news-form">
+                <form>
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="name" placeholder="Name" name="usrnm">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="email" placeholder="Email address" name="email">
+                    </div>
+                    <button class="btn-primary signup">Sign up</button>
+                </form>
+
+            </div>
+            <div class="newsletter-desc">
+                <h2>Sign up to hear about my latest workouts, recipes & more!</h2>
+            </div>
+        </section>
+    </main>
     <footer>
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="https://cdn.dribbble.com/users/486985/screenshots/4474189/image.png?compress=1&resize=400x300"
+                height="150px" width="150px">
+        </div>
         <div class="">
             <ul>
-                <li><a href=''>Instagram</a></li>
-                <li><a href=''>Youtube</a></li>
-                <li><a href=''>Snapchat</a></li>
+                <li><a href=''> <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                <li><a href=''><i class="fa fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+                <li><a href=''><i class=" fa fa-snapchat" aria-hidden="true"></i>
+                        Snapchat</a></li>
             </ul>
         </div>
         <div class="">
@@ -199,7 +467,7 @@
             </ul>
         </div>
     </footer>
-    <script src="./main.js"></script>
+
 </body>
 
 </html>
