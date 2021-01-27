@@ -200,6 +200,7 @@
         }
        
     }
+    
 
 }
 
@@ -262,8 +263,9 @@
     }
 
     .subscription-plans{
-        width: 60% !important;
-        padding-left: 6rem !important;
+        width: 60vw !important;
+        margin-left: 3rem !important;
+  
     }
 
     .subscription{
@@ -287,10 +289,12 @@
         width: 80% !important;
     }
 
-    .news-form{
-        width: 60% !important;
-
-    }
+    form{
+        width: 50%;
+        margin-left: 2rem !important;
+        padding-left: 0 !important;  
+        width: 30rem;      
+    } 
 
     footer{
         grid-template-columns: repeat(2,1fr) !important;
