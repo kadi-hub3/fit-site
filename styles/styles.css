@@ -350,6 +350,7 @@ header .sidenav {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 3rem;
+  z-index: 2;
 }
 
 header .sidenav a {
@@ -519,7 +520,6 @@ header #main {
   width: 200px;
   border: 10px solid #dfc4b7;
   border-radius: 1rem;
-  z-index: 2;
 }
 
 .section2 .scroll-workout .scroll-phone video {

@@ -81,6 +81,8 @@ header {
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 3rem;
+        z-index: 2;
+
       
       
         a {
@@ -237,7 +239,6 @@ header {
             width: 200px;
             border: 10px solid rgb(223,196,183);
             border-radius: 1rem;
-            z-index: 2;
 
                 video{  
                 position: absolute;  
